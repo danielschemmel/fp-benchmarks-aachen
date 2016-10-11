@@ -1,0 +1,22 @@
+architectures:
+  - x86_64
+categories:
+  - synthetic
+  - issta_2017
+  - aachen
+language: c11
+name: member
+schema_version: 0
+sources:
+ - test.c
+variants:
+  default:
+    dependencies:
+      klee_runtime: {}
+    description: >
+      Tests if member access works
+    verification_tasks:
+      no_assert_fail:
+        correct: true
+description: >
+  Tests for member access

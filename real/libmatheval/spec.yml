@@ -1,0 +1,60 @@
+architectures:
+  - x86_64
+categories:
+  - real_world
+  - issta_2017
+  - aachen
+dependencies:
+  cmath: {}
+language: gnu99
+name: libmatheval
+schema_version: 0
+defines:
+  HAVE_MATH_H: null
+sources:
+  - main.c
+  - libmatheval-1.1.11/lib/parser.c
+  - libmatheval-1.1.11/lib/scanner.c
+  - libmatheval-1.1.11/lib/error.c
+  - libmatheval-1.1.11/lib/matheval.c
+  - libmatheval-1.1.11/lib/g77_interface.c
+  - libmatheval-1.1.11/lib/node.c
+  - libmatheval-1.1.11/lib/symbol_table.c
+  - libmatheval-1.1.11/lib/xmalloc.c
+  - libmatheval-1.1.11/lib/xmath.c
+variants:
+  sym_x:
+    defines:
+      KLEE: null
+      SYM_X: null
+    dependencies:
+      klee_runtime: {}
+    description: >
+      Tests a quadratic function inside libmatheval
+    verification_tasks:
+      no_assert_fail:
+        correct: true
+  sym_f:
+    defines:
+      KLEE: null
+      SYM_F: null
+    dependencies:
+      klee_runtime: {}
+    description: >
+      Determines the derivative of a (heavily constrained) linear function
+    verification_tasks:
+      no_assert_fail:
+        correct: true
+  sqrt:
+    defines:
+      KLEE: null
+      SQRT: null
+    dependencies:
+      klee_runtime: {}
+    description: >
+      Tests sqrt inside libmatheval
+    verification_tasks:
+      no_assert_fail:
+        correct: true
+description: >
+  A library evaluating mathematical expressions

@@ -1,0 +1,24 @@
+architectures:
+  - x86_64
+categories:
+  - synthetic
+  - issta_2017
+  - aachen
+language: c11
+name: simple2
+schema_version: 0
+sources:
+ - test.c
+variants:
+  default:
+    defines:
+      KLEE: null
+    dependencies:
+      klee_runtime: {}
+    description: >
+      Does a few boring operations
+    verification_tasks:
+      no_assert_fail:
+        correct: true
+description: >
+  Does a few boring operations

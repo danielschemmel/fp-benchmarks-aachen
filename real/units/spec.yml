@@ -1,0 +1,48 @@
+architectures:
+  - x86_64
+categories:
+  - real_world
+  - issta_2017
+  - aachen
+dependencies:
+  cmath: {}
+language: gnu99
+name: units
+schema_version: 0
+defines:
+  UNITSFILE: '"/usr/local/share/units/definitions.units"'
+  LOCALEMAP: '"/usr/local/share/units/locale_map.txt"'
+  NO_SUPPRESS_APPEND: null
+  SUPPORT_UTF8: null
+  PACKAGE_NAME: '"GNU units"'
+  PACKAGE_TARNAME: '"units"'
+  PACKAGE_VERSION: '"2.13"'
+  PACKAGE_STRING: '"GNU units 2.13"'
+  PACKAGE_BUGREPORT: '"adrianm@gnu.org"'
+  PACKAGE_URL: '"http://www.gnu.org/software/units/"'
+  STDC_HEADERS: '1'
+  HAVE_SYS_TYPES_H: '1'
+  HAVE_SYS_STAT_H: '1'
+  HAVE_STDLIB_H: '1'
+  HAVE_STRING_H: '1'
+  HAVE_MEMORY_H: '1'
+  HAVE_STRINGS_H: '1'
+  HAVE_INTTYPES_H: '1'
+  HAVE_STDINT_H: '1'
+  HAVE_UNISTD_H: '1'
+sources:
+  - units-2.13/units.c
+  - units-2.13/parse.tab.c
+  - units-2.13/getopt.c
+  - units-2.13/getopt1.c
+variants:
+  meter_ft:
+    dependencies:
+      klee_runtime: {}
+    description: >
+      Convert from a symbolic number of meters to feet
+    verification_tasks:
+      no_assert_fail:
+        correct: true
+description: >
+  A tool to convert between units

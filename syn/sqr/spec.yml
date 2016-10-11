@@ -1,0 +1,143 @@
+architectures:
+  - x86_64
+categories:
+  - synthetic
+  - issta_2017
+  - aachen
+language: c11
+name: sqr
+schema_version: 0
+sources:
+ - test.c
+dependencies:
+  cmath: {}
+  klee_runtime: {}
+variants:
+  float-noflow:
+    defines:
+      USE_KLEE: null
+      ENABLE_FLOAT: null
+    description: >
+      Squares than roots a float.
+    verification_tasks:
+      no_assert_fail:
+        correct: false
+        counter_examples:
+          -
+            description: 'f large enough that overflow to infinity happens'
+            locations:
+              -
+                description: 'Failable assertion'
+                file: 'test.c'
+                line: 25
+          -
+            description: 'numeric instability'
+            locations:
+              -
+                description: 'Failable assertion'
+                file: 'test.c'
+                line: 27
+  float-flow:
+    defines:
+      USE_KLEE: null
+      ENABLE_FLOAT: null
+      ENABLE_FLOW: null
+    description: >
+      Squares than roots a float. Does so with the knowledge that over- and underflow may happen.
+    verification_tasks:
+      no_assert_fail:
+        correct: false
+        counter_examples:
+          -
+            description: 'numeric instability'
+            locations:
+              -
+                description: 'Failable assertion'
+                file: 'test.c'
+                line: 27
+  double-noflow:
+    defines:
+      USE_KLEE: null
+      ENABLE_DOUBLE: null
+    description: >
+      Squares than roots a double.
+    verification_tasks:
+      no_assert_fail:
+        correct: false
+        counter_examples:
+          -
+            description: 'f large enough that overflow to infinity happens'
+            locations:
+              -
+                description: 'Failable assertion'
+                file: 'test.c'
+                line: 45
+          -
+            description: 'numeric instability'
+            locations:
+              -
+                description: 'Failable assertion'
+                file: 'test.c'
+                line: 47
+  double-flow:
+    defines:
+      USE_KLEE: null
+      ENABLE_DOUBLE: null
+      ENABLE_FLOW: null
+    description: >
+      Squares than roots a double. Does so with the knowledge that over- and underflow may happen.
+    verification_tasks:
+      no_assert_fail:
+        correct: false
+        counter_examples:
+          -
+            description: 'numeric instability'
+            locations:
+              -
+                description: 'Failable assertion'
+                file: 'test.c'
+                line: 47
+  longdouble-noflow:
+    defines:
+      USE_KLEE: null
+      ENABLE_LONGDOUBLE: null
+    description: >
+      Squares than roots a long double.
+    verification_tasks:
+      no_assert_fail:
+        correct: false
+        counter_examples:
+          -
+            description: 'f large enough that overflow to infinity happens'
+            locations:
+              -
+                description: 'Failable assertion'
+                file: 'test.c'
+                line: 65
+          -
+            description: 'numeric instability'
+            locations:
+              -
+                description: 'Failable assertion'
+                file: 'test.c'
+                line: 67
+  longdouble-flow:
+    defines:
+      USE_KLEE: null
+      ENABLE_LONGDOUBLE: null
+      ENABLE_FLOW: null
+    description: >
+      Squares than roots a long double. Does so with the knowledge that over- and underflow may happen.
+    verification_tasks:
+      no_assert_fail:
+        correct: false
+        counter_examples:
+          -
+            description: 'numeric instability'
+            locations:
+              -
+                description: 'Failable assertion'
+                file: 'test.c'
+                line: 67
+description: >
+  Squares a number and then takes its squareroot. Tests if the result is roughly the same number as before.

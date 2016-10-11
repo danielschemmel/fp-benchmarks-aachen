@@ -1,0 +1,31 @@
+architectures:
+  - x86_64
+categories:
+  - synthetic
+  - issta_2017
+  - aachen
+language: c11
+name: ld-add
+schema_version: 0
+sources:
+ - test.c
+variants:
+  default:
+    defines: {}
+    dependencies:
+      klee_runtime: {}
+    description: >
+      A long double addition that demonstrates higher precision than a double addition
+    verification_tasks:
+      no_assert_fail:
+        correct: false
+        counter_examples:
+          -
+            description: 'a = LDBL_EPSILON, b = 1000000'
+            locations:
+              -
+                description: 'Failable assertion'
+                file: 'test.c'
+                line: 16
+description: >
+  A long double addition that demonstrates higher precision than a double addition

@@ -1,0 +1,13 @@
+add_benchmark(atof)
+add_benchmark(halve)
+add_benchmark(inf)
+add_benchmark(member)
+add_benchmark(simple)
+add_benchmark(simple2)
+add_benchmark(sqr)
+
+add_benchmark(ld-add)
+add_benchmark(ld-overwrite)
+add_benchmark(ld-unnormal)
+add_benchmark(mod)
+add_benchmark(nan)

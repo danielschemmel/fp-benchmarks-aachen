@@ -1,0 +1,33 @@
+architectures:
+  - x86_64
+categories:
+  - synthetic
+  - issta_2017
+  - aachen
+language: c11
+name: simple
+schema_version: 0
+sources:
+ - test.c
+variants:
+  default:
+    defines:
+      KLEE: null
+      PRECISION: null
+    dependencies:
+      klee_runtime: {}
+    description: >
+      A very simple sanity check
+    verification_tasks:
+      no_assert_fail:
+        correct: false
+        counter_examples:
+          -
+            description: 'i = 0, j = 11'
+            locations:
+              -
+                description: 'Failable assertion'
+                file: 'test.c'
+                line: 17
+description: >
+  A very simple sanity check

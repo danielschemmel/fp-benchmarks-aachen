@@ -1,0 +1,31 @@
+architectures:
+  - x86_64
+categories:
+  - real_world
+  - issta_2017
+  - aachen
+language: gnu99
+name: diction
+schema_version: 0
+dependencies:
+  cmath: {}
+defines:
+  SHAREDIR: "/usr/local/share"
+  LOCALEDIR: "/usr/local/share/locale"
+sources:
+  - diction-1.11/style.c
+  - diction-1.11/sentence.c
+  - diction-1.11/misc.c
+  - diction-1.11/getopt.c
+  - diction-1.11/getopt1.c
+variants:
+  style:
+    dependencies:
+      klee_runtime: {}
+    description: >
+      Runs a number of readability measures on a preanalysed text
+    verification_tasks:
+      no_assert_fail:
+        correct: true
+description: >
+  Text analysis program

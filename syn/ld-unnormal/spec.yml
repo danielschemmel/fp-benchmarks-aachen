@@ -1,0 +1,24 @@
+architectures:
+  - x86_64
+categories:
+  - synthetic
+  - issta_2017
+  - aachen
+language: c11
+name: ld-unnormal
+schema_version: 0
+sources:
+ - test.c
+variants:
+  default:
+    defines: {}
+    dependencies:
+      klee_runtime: {}
+      cmath: {}
+    description: >
+      A long double test with unnormal numbers
+    verification_tasks:
+      no_assert_fail:
+        correct: true
+description: >
+  A long double test with unnormal numbers

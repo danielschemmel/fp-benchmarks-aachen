@@ -1,0 +1,47 @@
+architectures:
+  - x86_64
+categories:
+  - synthetic
+  - issta_2017
+  - aachen
+language: c11
+name: inf
+schema_version: 0
+sources:
+ - test.c
+variants:
+  float:
+    defines:
+      USE_KLEE: null
+      ENABLE_FLOAT: null
+    dependencies:
+      klee_runtime: {}
+    description: >
+      Has fun with infinite floats
+    verification_tasks:
+      no_assert_fail:
+        correct: true
+  double:
+    defines:
+      USE_KLEE: null
+      ENABLE_DOUBLE: null
+    dependencies:
+      klee_runtime: {}
+    description: >
+      Has fun with infinite doubles
+    verification_tasks:
+      no_assert_fail:
+        correct: true
+  longdouble:
+    defines:
+      USE_KLEE: null
+      ENABLE_LONGDOUBLE: null
+    dependencies:
+      klee_runtime: {}
+    description: >
+      Has fun with infinite long doubles
+    verification_tasks:
+      no_assert_fail:
+        correct: true
+description: >
+  Has fun with infinite floating point values

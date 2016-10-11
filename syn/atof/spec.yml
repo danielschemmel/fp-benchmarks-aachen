@@ -1,0 +1,23 @@
+architectures:
+  - x86_64
+categories:
+  - synthetic
+  - issta_2017
+  - aachen
+language: c11
+name: atof
+schema_version: 0
+sources:
+ - test.c
+variants:
+  default:
+    defines: {}
+    dependencies:
+      klee_runtime: {}
+    description: >
+      Uses atof to parse a few floats
+    verification_tasks:
+      no_assert_fail:
+        correct: true
+description: >
+  Uses atof to parse a few floats

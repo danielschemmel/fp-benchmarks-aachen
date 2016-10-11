@@ -1,0 +1,44 @@
+architectures:
+  - x86_64
+categories:
+  - synthetic
+  - issta_2017
+  - aachen
+language: c11
+name: nan
+schema_version: 0
+sources:
+ - test.c
+dependencies:
+  klee_runtime: {}
+  cmath : {}
+variants:
+  float:
+    defines:
+      USE_KLEE: null
+      ENABLE_FLOAT: null
+    description: >
+      Has fun with NaN floats
+    verification_tasks:
+      no_assert_fail:
+        correct: true
+  double:
+    defines:
+      USE_KLEE: null
+      ENABLE_DOUBLE: null
+    description: >
+      Has fun with NaN doubles
+    verification_tasks:
+      no_assert_fail:
+        correct: true
+  longdouble:
+    defines:
+      USE_KLEE: null
+      ENABLE_LONGDOUBLE: null
+    description: >
+      Has fun with NaN long doubles
+    verification_tasks:
+      no_assert_fail:
+        correct: true
+description: >
+  Has fun with NaNs

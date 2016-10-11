@@ -1,0 +1,98 @@
+architectures:
+  - x86_64
+categories:
+  - synthetic
+  - issta_2017
+  - aachen
+language: c11
+name: halve
+schema_version: 0
+sources:
+ - test.c
+dependencies:
+  cmath: {}
+  klee_runtime: {}
+variants:
+  float-noflow:
+    defines:
+      USE_KLEE: null
+      ENABLE_FLOAT: null
+    description: >
+      Float version, ignores underflow
+    verification_tasks:
+      no_assert_fail:
+        correct: false
+        counter_examples:
+          -
+            description: 'f any really tiny number'
+            locations:
+              -
+                description: 'Failable assertion'
+                file: 'test.c'
+                line: 33
+  float-flow:
+    defines:
+      USE_KLEE: null
+      ENABLE_FLOAT: null
+      ENABLE_FLOW: null
+    description: >
+      Float version, handles underflow
+    verification_tasks:
+      no_assert_fail:
+        correct: true
+  double-noflow:
+    defines:
+      USE_KLEE: null
+      ENABLE_DOUBLE: null
+    description: >
+      Double version, ignores underflow
+    verification_tasks:
+      no_assert_fail:
+        correct: false
+        counter_examples:
+          -
+            description: 'f any really tiny number'
+            locations:
+              -
+                description: 'Failable assertion'
+                file: 'test.c'
+                line: 56
+  double-flow:
+    defines:
+      USE_KLEE: null
+      ENABLE_DOUBLE: null
+      ENABLE_FLOW: null
+    description: >
+      Double version, handles underflow
+    verification_tasks:
+      no_assert_fail:
+        correct: true
+  longdouble-noflow:
+    defines:
+      USE_KLEE: null
+      ENABLE_LONGDOUBLE: null
+    description: >
+      long double version, ignores underflow
+    verification_tasks:
+      no_assert_fail:
+        correct: false
+        counter_examples:
+          -
+            description: 'f any really tiny number'
+            locations:
+              -
+                description: 'Failable assertion'
+                file: 'test.c'
+                line: 79
+  longdouble-flow:
+    defines:
+      USE_KLEE: null
+      ENABLE_LONGDOUBLE: null
+      ENABLE_FLOW: null
+    description: >
+      long double version, handles underflow
+    verification_tasks:
+      no_assert_fail:
+        correct: true
+description: >
+  Halves then doubles a floating point value.

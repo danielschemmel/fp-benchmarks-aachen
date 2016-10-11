@@ -1,0 +1,41 @@
+architectures:
+  - x86_64
+categories:
+  - real_world
+  - issta_2017
+  - aachen
+dependencies:
+  cmath: {}
+language: c99
+name: numerical_recipes
+schema_version: 0
+sources:
+  - main.c
+  - numerical_recipes/gaussj.c
+  - numerical_recipes/qrdcmp.c
+  - numerical_recipes/nrutil.c
+variants:
+  gaussj:
+    defines:
+      KLEE: null
+      GAUSSJ: null
+    dependencies:
+      klee_runtime: {}
+    description: >
+     Runs Gauss-Jordan on a 3x3 float matrix
+    verification_tasks:
+      no_assert_fail:
+        correct: true
+  qrdcmp:
+    defines:
+      KLEE: null
+      QRDCMP: null
+    dependencies:
+      klee_runtime: {}
+    description: >
+      Runs QR decomposition on a 3x3 float matrix with one symbolic field
+    verification_tasks:
+      no_assert_fail:
+        correct: true
+description: >
+  Tests for Gauss-Jordan and QR decomposition algorithms from the book Numerical Recipes for C

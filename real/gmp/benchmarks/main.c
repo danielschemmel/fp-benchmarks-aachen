@@ -7,7 +7,7 @@
 #include <klee/klee.h>
 #endif
 
-#include "gmp-6.1.1/gmp.h"
+#include <gmp.h>
 
 #ifdef NEGATE
 int main(int argc, char** argv) {

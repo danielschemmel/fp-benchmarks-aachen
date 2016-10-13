@@ -1,0 +1,104 @@
+architectures:
+  - x86_64
+categories:
+  - real_world
+  - issta_2017
+  - aachen
+dependencies:
+  gmp: { 'version': '6.1.1'}
+language: gnu99
+name: gmp
+schema_version: 0
+sources:
+ - main.c
+variants:
+  klee_negate:
+    defines:
+      KLEE: null
+      NEGATE: null
+    dependencies:
+      klee_runtime: {}
+    description: >
+      Negates a (constrained) double in gmp.
+    verification_tasks:
+      no_assert_fail:
+        correct: true
+  klee_mul:
+    defines:
+      KLEE: null
+      MUL: null
+    dependencies:
+      klee_runtime: {}
+    description: >
+      Multiply two doubles in gmp.
+    verification_tasks:
+      no_assert_fail:
+        correct: true
+  klee_inv_arg:
+    defines:
+      KLEE: null
+      INVALID_ARGUMENTS: null
+    dependencies:
+      klee_runtime: {}
+    description: >
+      Tests if gmp correctly rejects invalid arguments. >
+      This should never reach the assert in the main function.
+    verification_tasks:
+      no_assert_fail:
+        correct: true
+      no_reach_error_function:
+        correct: false
+        counter_examples:
+          -
+            description: 'Expected Error'
+            locations:
+              -
+                description: 'first method of abortion'
+                file: 'gmp-6.1.1/invalid.c'
+                line: 84
+      no_integer_division_by_zero:
+        correct: false
+        counter_examples:
+          -
+            description: 'Expected Error'
+            locations:
+              -
+                description: 'second method of abortion'
+                file: 'gmp-6.1.1/errno.c'
+                line: 55
+  klee_integer:
+    defines:
+      KLEE: null
+      INTEGER: null
+    dependencies:
+      klee_runtime: {}
+    description: >
+      Tests if a gmp float is an integer.
+    verification_tasks:
+      no_assert_fail:
+        correct: true
+  klee_precision:
+    defines:
+      KLEE: null
+      PRECISION: null
+    dependencies:
+      klee_runtime: {}
+    description: >
+      Verifies that the fp precision in gmp is greater than >
+      the precision of native floating point.
+    verification_tasks:
+      no_assert_fail:
+        correct: true
+  klee_mpqload:
+    defines:
+      KLEE: null
+      MPQLOAD: null
+    dependencies:
+      klee_runtime: {}
+    description: >
+      Sets a double to an integral value, stores that in a rational, extracts the rational to a double and ensures that it is the same as before.
+    verification_tasks:
+      no_assert_fail:
+        correct: true
+description: >
+  Tests for the floating point module of the GNU Multiple Precision library

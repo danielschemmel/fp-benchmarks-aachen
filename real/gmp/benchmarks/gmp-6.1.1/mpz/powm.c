@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_powm(res,base,exp,mod) -- Set R to (U^E) mod M.
 
    Contributed to the GNU project by Torbjorn Granlund.

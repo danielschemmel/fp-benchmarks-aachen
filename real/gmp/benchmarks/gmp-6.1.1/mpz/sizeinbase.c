@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_sizeinbase(x, base) -- return an approximation to the number of
    character the integer X would have printed in base BASE.  The
    approximation is never too small.

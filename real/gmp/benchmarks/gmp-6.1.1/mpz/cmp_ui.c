@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_cmp_ui.c -- Compare an mpz_t a with an mp_limb_t b.  Return positive,
   zero, or negative based on if a > b, a == b, or a < b.
 

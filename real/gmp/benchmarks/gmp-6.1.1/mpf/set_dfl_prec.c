@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpf_set_default_prec --
 
 Copyright 1993-1995, 2001 Free Software Foundation, Inc.

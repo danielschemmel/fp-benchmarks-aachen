@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_addmul, mpz_submul -- add or subtract multiple.
 
 Copyright 2001, 2004, 2005, 2012 Free Software Foundation, Inc.

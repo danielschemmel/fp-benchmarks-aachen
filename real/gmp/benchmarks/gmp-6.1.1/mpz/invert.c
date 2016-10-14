@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_invert (inv, x, n).  Find multiplicative inverse of X in Z(N).
    If X has an inverse, return non-zero and store inverse in INVERSE,
    otherwise, return 0 and put garbage in INVERSE.

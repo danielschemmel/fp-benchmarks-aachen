@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpf_sub -- Subtract two floats.
 
 Copyright 1993-1996, 1999-2002, 2004, 2005, 2011, 2014 Free Software Foundation, Inc.

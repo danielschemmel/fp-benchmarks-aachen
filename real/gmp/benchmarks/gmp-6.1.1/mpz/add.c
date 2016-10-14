@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_add -- add integers.
 
 Copyright 2001 Free Software Foundation, Inc.

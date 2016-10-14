@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpf_set_z -- Assign a float from an integer.
 
 Copyright 1996, 2001, 2004 Free Software Foundation, Inc.

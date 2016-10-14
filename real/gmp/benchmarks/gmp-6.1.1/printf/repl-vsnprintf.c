@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* __gmp_replacement_vsnprintf -- for systems which don't have vsnprintf, or
    only have a broken one.
 

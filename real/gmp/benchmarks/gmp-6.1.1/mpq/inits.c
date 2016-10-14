@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpq_inits() -- Initialize multiple mpq_t variables and set them to 0.
 
 Copyright 2009, 2015 Free Software Foundation, Inc.

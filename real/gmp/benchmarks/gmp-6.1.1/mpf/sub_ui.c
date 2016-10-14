@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpf_sub_ui -- Subtract an unsigned integer from a float.
 
 Copyright 1993, 1994, 1996, 2001 Free Software Foundation, Inc.

@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpq_set_d(mpq_t q, double d) -- Set q to d without rounding.
 
 Copyright 2000, 2002, 2003, 2012, 2014 Free Software Foundation, Inc.

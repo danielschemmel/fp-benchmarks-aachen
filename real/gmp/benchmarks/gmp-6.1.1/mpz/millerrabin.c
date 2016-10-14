@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_millerrabin(n,reps) -- An implementation of the probabilistic primality
    test found in Knuth's Seminumerical Algorithms book.  If the function
    mpz_millerrabin() returns 0 then n is not prime.  If it returns 1, then n is

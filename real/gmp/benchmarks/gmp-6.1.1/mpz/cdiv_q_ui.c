@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_cdiv_q_ui -- Division rounding the quotient towards +infinity.  The
    remainder gets the opposite sign as the denominator.  In order to make it
    always fit into the return type, the negative of the true remainder is

@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_lucnum2_ui -- calculate Lucas numbers.
 
 Copyright 2001, 2003, 2005, 2012 Free Software Foundation, Inc.

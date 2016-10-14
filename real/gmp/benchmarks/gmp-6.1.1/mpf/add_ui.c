@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpf_add_ui -- Add a float and an unsigned integer.
 
 Copyright 1993, 1994, 1996, 2000, 2001 Free Software Foundation, Inc.

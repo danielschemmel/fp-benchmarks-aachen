@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* double mpz_get_d_2exp (signed long int *exp, mpz_t src).
 
 Copyright 2001, 2003, 2004, 2012 Free Software Foundation, Inc.

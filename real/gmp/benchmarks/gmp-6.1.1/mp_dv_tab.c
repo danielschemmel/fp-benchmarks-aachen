@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* __gmp_digit_value_tab -- support for mp*_set_str
 
    THE CONTENTS OF THIS FILE ARE FOR INTERNAL USE AND MAY CHANGE

@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_perfect_square_p(arg) -- Return non-zero if ARG is a perfect square,
    zero otherwise.
 

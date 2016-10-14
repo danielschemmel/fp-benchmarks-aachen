@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_inp_raw -- read an mpz_t in raw format.
 
 Copyright 2001, 2002, 2005, 2012 Free Software Foundation, Inc.

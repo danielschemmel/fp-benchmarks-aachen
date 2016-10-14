@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_congruent_2exp_p -- test congruence of mpz mod 2^n.
 
 Copyright 2001, 2002, 2013 Free Software Foundation, Inc.

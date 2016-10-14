@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpq_clears() -- Clear multiple mpq_t variables.
 
 Copyright 2009, 2014, 2015 Free Software Foundation, Inc.

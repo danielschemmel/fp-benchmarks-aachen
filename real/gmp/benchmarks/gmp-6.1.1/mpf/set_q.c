@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpf_set_q (mpf_t rop, mpq_t op) -- Convert the rational op to the float rop.
 
 Copyright 1996, 1999, 2001, 2002, 2004, 2005 Free Software Foundation, Inc.

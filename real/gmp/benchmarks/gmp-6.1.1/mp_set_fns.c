@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mp_set_memory_functions -- Set the allocate, reallocate, and free functions
    for use by the mp package.
 

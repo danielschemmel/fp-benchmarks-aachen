@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* __clz_tab -- support for longlong.h
 
    THE CONTENTS OF THIS FILE ARE FOR INTERNAL USE AND MAY CHANGE

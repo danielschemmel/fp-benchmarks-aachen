@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_init_set_str(string, base) -- Convert the \0-terminated string STRING in
    base BASE to a multiple precision integer.  Allow white space in the string.
    If BASE == 0 determine the base in the C standard way, i.e.  0xhh...h means

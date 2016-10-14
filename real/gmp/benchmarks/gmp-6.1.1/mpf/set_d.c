@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpf_set_d -- Assign a float from a double.
 
 Copyright 1993-1996, 2001, 2003, 2004 Free Software Foundation, Inc.

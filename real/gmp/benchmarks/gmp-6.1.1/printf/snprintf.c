@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* gmp_snprintf -- formatted output to an fixed size buffer.
 
 Copyright 2001 Free Software Foundation, Inc.

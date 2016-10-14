@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpf_set_prec_raw(x,bits) -- Change the precision of x without changing
    allocation.  For proper operation, the original precision need to be reset
    sooner or later.

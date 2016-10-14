@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_get_ui(integer) -- Return the least significant digit from INTEGER.
 
 Copyright 1991, 1993-1995, 2001 Free Software Foundation, Inc.

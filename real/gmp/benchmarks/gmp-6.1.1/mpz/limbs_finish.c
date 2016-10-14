@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_finish_limbs -- Update mpz after writing to the limb array.
 
 Copyright 2013 Free Software Foundation, Inc.

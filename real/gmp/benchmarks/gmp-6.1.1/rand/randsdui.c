@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* gmp_randseed_ui (state, seed) -- Set initial seed SEED in random
    state STATE.
 

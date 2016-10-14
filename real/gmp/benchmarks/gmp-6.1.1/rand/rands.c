@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* __gmp_rands -- global random state for old-style random functions.
 
    EVERYTHING IN THIS FILE IS FOR INTERNAL USE ONLY.  IT'S ALMOST CERTAIN TO

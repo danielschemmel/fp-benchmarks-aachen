@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* gmp_randinit_lc_2exp_size -- initialize a random state with a linear
    congruential generator of a requested size.
 

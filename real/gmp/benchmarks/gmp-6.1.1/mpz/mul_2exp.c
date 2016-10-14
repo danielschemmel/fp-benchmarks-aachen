@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_mul_2exp -- Multiply a bignum by 2**CNT
 
 Copyright 1991, 1993, 1994, 1996, 2001, 2002, 2012 Free Software Foundation,

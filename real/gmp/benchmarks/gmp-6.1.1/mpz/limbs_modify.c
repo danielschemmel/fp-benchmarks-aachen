@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_limbs_modify -- Read-and-modify access to the mpn-style limb array.
 
 Copyright 2013 Free Software Foundation, Inc.

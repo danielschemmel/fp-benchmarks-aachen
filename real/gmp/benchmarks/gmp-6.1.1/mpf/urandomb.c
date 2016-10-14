@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpf_urandomb (rop, state, nbits) -- Generate a uniform pseudorandom
    real number between 0 (inclusive) and 1 (exclusive) of size NBITS,
    using STATE as the random state previously initialized by a call to

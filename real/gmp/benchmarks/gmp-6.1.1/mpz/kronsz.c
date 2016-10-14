@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_si_kronecker -- long+mpz Kronecker/Jacobi symbol.
 
 Copyright 1999-2002 Free Software Foundation, Inc.

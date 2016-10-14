@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_cdiv_q_2exp, mpz_fdiv_q_2exp -- quotient from mpz divided by 2^n.
 
 Copyright 1991, 1993, 1994, 1996, 1998, 1999, 2001, 2002, 2004, 2012,

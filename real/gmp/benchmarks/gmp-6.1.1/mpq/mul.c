@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpq_mul -- multiply two rational numbers.
 
 Copyright 1991, 1994-1996, 2000-2002 Free Software Foundation, Inc.

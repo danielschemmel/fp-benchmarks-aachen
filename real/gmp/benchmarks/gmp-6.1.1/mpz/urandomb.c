@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_urandomb (rop, state, n) -- Generate a uniform pseudorandom
    integer in the range 0 to 2^N - 1, inclusive, using STATE as the
    random state previously initialized by a call to gmp_randinit().

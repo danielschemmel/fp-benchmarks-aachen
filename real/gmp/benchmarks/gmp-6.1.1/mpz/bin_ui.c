@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_bin_ui - compute n over k.
 
 Copyright 1998-2002, 2012, 2013 Free Software Foundation, Inc.

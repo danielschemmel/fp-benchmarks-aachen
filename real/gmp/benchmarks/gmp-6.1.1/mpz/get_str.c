@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_get_str (string, base, mp_src) -- Convert the multiple precision
    number MP_SRC to a string STRING of base BASE.  If STRING is NULL
    allocate space for the result.  In any case, return a pointer to the

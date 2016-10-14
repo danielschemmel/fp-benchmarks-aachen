@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_combit -- complement a specified bit.
 
 Copyright 2002, 2003, 2012, 2015 Free Software Foundation, Inc.

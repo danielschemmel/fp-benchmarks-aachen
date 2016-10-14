@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_divexact_ui -- exact division mpz by ulong.
 
 Copyright 2001, 2002, 2012 Free Software Foundation, Inc.

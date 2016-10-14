@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_pow_ui -- mpz raised to ulong.
 
 Copyright 2001, 2008 Free Software Foundation, Inc.

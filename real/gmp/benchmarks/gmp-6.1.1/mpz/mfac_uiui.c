@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_mfac_uiui(RESULT, N, M) -- Set RESULT to N!^(M) = N(N-M)(N-2M)...
 
 Contributed to the GNU project by Marco Bodrato.

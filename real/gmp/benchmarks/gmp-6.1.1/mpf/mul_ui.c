@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpf_mul_ui -- Multiply a float and an unsigned integer.
 
 Copyright 1993, 1994, 1996, 2001, 2003, 2004 Free Software Foundation, Inc.

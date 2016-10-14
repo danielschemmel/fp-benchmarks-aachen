@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* gmp_randinit_set -- initialize with a copy of another gmp_randstate_t.
 
 Copyright 2003 Free Software Foundation, Inc.

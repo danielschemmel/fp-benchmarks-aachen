@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_popcount(mpz_ptr op) -- Population count of OP.  If the operand is
    negative, return ~0 (a novel representation of infinity).
 

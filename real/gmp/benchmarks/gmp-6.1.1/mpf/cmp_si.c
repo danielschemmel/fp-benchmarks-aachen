@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpf_cmp_si -- Compare a float with a signed integer.
 
 Copyright 1993-1995, 1999-2002, 2004, 2012, 2015 Free Software

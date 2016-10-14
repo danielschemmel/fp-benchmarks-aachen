@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpf_fits_sint_p -- test whether an mpf fits an int.
 
 Copyright 2001 Free Software Foundation, Inc.

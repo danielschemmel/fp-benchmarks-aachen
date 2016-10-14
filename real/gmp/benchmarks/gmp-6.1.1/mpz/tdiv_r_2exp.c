@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_tdiv_r_2exp -- Divide an integer by 2**CNT and produce a remainder.
 
 Copyright 1991, 1993-1995, 2001, 2002, 2012 Free Software Foundation, Inc.

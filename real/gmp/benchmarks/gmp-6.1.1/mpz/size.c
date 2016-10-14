@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_size(x) -- return the number of lims currently used by the
    value of integer X.
 

@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* _mpz_realloc -- make the mpz_t have NEW_ALLOC digits allocated.
 
 Copyright 1991, 1993-1995, 2000, 2001, 2008 Free Software Foundation, Inc.

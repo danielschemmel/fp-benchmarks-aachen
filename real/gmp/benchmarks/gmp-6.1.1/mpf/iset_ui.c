@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpf_init_set_ui() -- Initialize a float and assign it from an unsigned int.
 
 Copyright 1993-1995, 2000, 2001, 2003, 2004 Free Software Foundation, Inc.

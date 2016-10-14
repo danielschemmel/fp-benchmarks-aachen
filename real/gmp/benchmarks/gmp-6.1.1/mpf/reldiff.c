@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpf_reldiff -- Generate the relative difference of two floats.
 
 Copyright 1996, 2001, 2004, 2005 Free Software Foundation, Inc.

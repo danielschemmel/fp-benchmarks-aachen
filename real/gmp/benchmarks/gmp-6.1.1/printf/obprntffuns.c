@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* __gmp_obstack_printf_funs -- support for gmp_obstack_printf and
    gmp_obstack_vprintf.
 

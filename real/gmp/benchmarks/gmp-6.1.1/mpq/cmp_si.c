@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* _mpq_cmp_si -- compare mpq and long/ulong fraction.
 
 Copyright 2001, 2013, 2014 Free Software Foundation, Inc.

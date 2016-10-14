@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpf_get_default_prec -- return default precision in bits.
 
 Copyright 2001 Free Software Foundation, Inc.

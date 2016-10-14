@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mp_get_memory_functions -- Get the allocate, reallocate, and free functions.
 
 Copyright 2002 Free Software Foundation, Inc.

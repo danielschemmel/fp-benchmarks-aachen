@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpf_clear -- de-allocate the space occupied by the dynamic digit space of
    an integer.
 

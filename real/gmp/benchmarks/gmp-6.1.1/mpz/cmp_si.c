@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_cmp_si(u,v) -- Compare an integer U with a single-word int V.
    Return positive, zero, or negative based on if U > V, U == V, or U < V.
 

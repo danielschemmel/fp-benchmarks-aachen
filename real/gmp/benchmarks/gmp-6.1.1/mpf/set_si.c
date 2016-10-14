@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpf_set_si() -- Assign a float from a signed int.
 
 Copyright 1993-1995, 2000-2002, 2004, 2012 Free Software Foundation, Inc.

@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* gmp_obstack_printf -- formatted output to an obstack.
 
 Copyright 2001, 2002 Free Software Foundation, Inc.

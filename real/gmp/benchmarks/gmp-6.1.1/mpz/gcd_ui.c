@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_gcd_ui -- Calculate the greatest common divisor of two integers.
 
 Copyright 1994, 1996, 1999-2004 Free Software Foundation, Inc.

@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpq_swap (U, V) -- Swap U and V.
 
 Copyright 1997, 1998, 2000, 2001 Free Software Foundation, Inc.

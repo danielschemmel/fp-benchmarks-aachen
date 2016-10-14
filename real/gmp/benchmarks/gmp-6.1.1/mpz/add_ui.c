@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_add_ui -- Add an mpz_t and an unsigned one-word integer.
 
 Copyright 2001 Free Software Foundation, Inc.

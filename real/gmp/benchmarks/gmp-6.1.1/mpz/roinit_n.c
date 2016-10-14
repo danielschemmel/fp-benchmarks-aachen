@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_roinit_n -- Initialize mpz with read-only limb array.
 
 Copyright 2013 Free Software Foundation, Inc.

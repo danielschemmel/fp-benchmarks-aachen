@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpf_pow_ui -- Compute b^e.
 
 Copyright 1998, 1999, 2001, 2012, 2015 Free Software Foundation, Inc.

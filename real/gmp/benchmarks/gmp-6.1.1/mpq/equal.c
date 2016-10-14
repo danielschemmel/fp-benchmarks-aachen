@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpq_equal(u,v) -- Compare U, V.  Return non-zero if they are equal, zero
    if they are non-equal.
 

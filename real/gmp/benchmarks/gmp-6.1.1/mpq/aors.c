@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpq_add, mpq_sub -- add or subtract rational numbers.
 
 Copyright 1991, 1994-1997, 2000, 2001, 2004, 2005 Free Software Foundation,

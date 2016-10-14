@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* gmp_fscanf -- formatted input from a FILE.
 
 Copyright 2001 Free Software Foundation, Inc.

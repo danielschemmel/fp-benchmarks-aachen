@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_swap (dest_integer, src_integer) -- Swap U and V.
 
 Copyright 1997, 1998, 2001, 2012, 2015 Free Software Foundation, Inc.

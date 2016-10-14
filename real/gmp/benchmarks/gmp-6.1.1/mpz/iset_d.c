@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_init_set_d(integer, val) -- Initialize and assign INTEGER with a double
    value VAL.
 

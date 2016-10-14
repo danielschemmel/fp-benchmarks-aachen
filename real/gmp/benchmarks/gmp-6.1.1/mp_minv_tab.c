@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* A table of data supporting binvert_limb().
 
    THE CONTENTS OF THIS FILE ARE FOR INTERNAL USE AND MAY CHANGE

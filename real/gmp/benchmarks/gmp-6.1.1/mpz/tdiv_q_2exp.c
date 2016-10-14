@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_tdiv_q_2exp -- Divide an integer by 2**CNT.  Round the quotient
    towards -infinity.
 

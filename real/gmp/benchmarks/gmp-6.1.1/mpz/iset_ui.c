@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_init_set_ui(dest,val) -- Make a new multiple precision in DEST and
    assign VAL to the new number.
 

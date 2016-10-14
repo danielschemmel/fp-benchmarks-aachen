@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpq_inv(dest,src) -- invert a rational number, i.e. set DEST to SRC
    with the numerator and denominator swapped.
 

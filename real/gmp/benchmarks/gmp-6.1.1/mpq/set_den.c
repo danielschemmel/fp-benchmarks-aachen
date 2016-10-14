@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpq_set_den(dest,den) -- Set the denominator of DEST from DEN.
 
 Copyright 1991, 1994-1996, 2000, 2001, 2012 Free Software Foundation, Inc.

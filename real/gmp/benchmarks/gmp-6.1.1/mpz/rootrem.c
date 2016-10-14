@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_rootrem(root, rem, u, nth) --  Set ROOT to trunc(U^(1/nth)) and
    set REM to the remainder.
 

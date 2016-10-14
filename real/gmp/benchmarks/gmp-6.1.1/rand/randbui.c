@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* gmp_urandomb_ui -- random bits returned in a ulong.
 
 Copyright 2003, 2004 Free Software Foundation, Inc.

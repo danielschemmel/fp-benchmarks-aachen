@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* gmp_nextprime -- generate small primes reasonably efficiently for internal
    GMP needs.
 

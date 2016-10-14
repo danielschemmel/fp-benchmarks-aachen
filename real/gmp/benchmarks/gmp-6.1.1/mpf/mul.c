@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpf_mul -- Multiply two floats.
 
 Copyright 1993, 1994, 1996, 2001, 2005 Free Software Foundation, Inc.

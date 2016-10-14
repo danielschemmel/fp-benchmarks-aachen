@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpf_set_prec(x) -- Change the precision of x.
 
 Copyright 1993-1995, 2000, 2001 Free Software Foundation, Inc.

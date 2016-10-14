@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* primesieve (BIT_ARRAY, N) -- Fills the BIT_ARRAY with a mask for primes up to N.
 
 Contributed to the GNU project by Marco Bodrato.

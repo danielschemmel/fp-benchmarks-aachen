@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpq_mul_2exp, mpq_div_2exp - multiply or divide by 2^N */
 
 /*

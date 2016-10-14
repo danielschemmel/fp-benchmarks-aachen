@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpq_set_f -- set an mpq from an mpf.
 
 Copyright 2000-2002 Free Software Foundation, Inc.

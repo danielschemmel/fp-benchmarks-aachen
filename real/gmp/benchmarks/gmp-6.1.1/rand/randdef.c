@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* gmp_randinit_default -- initialize a random state with a default algorithm.
 
 Copyright 2001, 2002 Free Software Foundation, Inc.

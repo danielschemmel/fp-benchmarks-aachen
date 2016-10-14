@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* gmp_urandomm_ui -- uniform random number 0 to N-1 for ulong N.
 
 Copyright 2003, 2004 Free Software Foundation, Inc.

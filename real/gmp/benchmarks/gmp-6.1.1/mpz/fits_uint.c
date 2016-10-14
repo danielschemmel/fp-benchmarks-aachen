@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_fits_uint_p -- test whether z fits an unsigned int.
 
 Copyright 1997, 2000, 2001 Free Software Foundation, Inc.

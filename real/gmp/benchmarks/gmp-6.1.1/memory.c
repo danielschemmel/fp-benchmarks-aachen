@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* Memory allocation routines.
 
 Copyright 1991, 1993, 1994, 2000-2002, 2012 Free Software Foundation, Inc.

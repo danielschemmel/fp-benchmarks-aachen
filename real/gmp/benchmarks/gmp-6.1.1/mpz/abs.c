@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_abs(dst, src) -- Assign the absolute value of SRC to DST.
 
 Copyright 1991, 1993-1995, 2001, 2012 Free Software Foundation, Inc.

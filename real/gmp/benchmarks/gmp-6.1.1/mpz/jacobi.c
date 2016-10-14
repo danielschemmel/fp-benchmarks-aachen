@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_jacobi, mpz_legendre, mpz_kronecker -- mpz/mpz Jacobi symbols.
 
 Copyright 2000-2002, 2005, 2010-2012 Free Software Foundation, Inc.

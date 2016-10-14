@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* Old function entrypoints retained for binary compatibility.
 
 Copyright 2000, 2001 Free Software Foundation, Inc.

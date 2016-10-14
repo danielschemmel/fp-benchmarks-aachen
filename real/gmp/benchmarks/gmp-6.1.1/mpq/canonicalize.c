@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpq_canonicalize(op) -- Remove common factors of the denominator and
    numerator in OP.
 

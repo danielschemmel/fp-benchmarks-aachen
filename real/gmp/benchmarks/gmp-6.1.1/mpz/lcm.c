@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_lcm -- mpz/mpz least common multiple.
 
 Copyright 1996, 2000, 2001, 2005, 2012 Free Software Foundation, Inc.

@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_fdiv_ui -- Division rounding the quotient towards -infinity.
    The remainder gets the same sign as the denominator.
 

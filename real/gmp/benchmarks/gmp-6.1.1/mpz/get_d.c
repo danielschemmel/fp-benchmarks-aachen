@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* double mpz_get_d (mpz_t src) -- Return the double approximation to SRC.
 
 Copyright 1996, 1997, 2000-2003 Free Software Foundation, Inc.

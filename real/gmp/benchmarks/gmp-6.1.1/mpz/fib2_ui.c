@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_fib2_ui -- calculate Fibonacci numbers.
 
 Copyright 2001, 2012, 2014 Free Software Foundation, Inc.

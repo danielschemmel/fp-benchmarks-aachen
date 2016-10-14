@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_ui_sub -- Subtract an unsigned one-word integer and an mpz_t.
 
 Copyright 2002, 2004 Free Software Foundation, Inc.

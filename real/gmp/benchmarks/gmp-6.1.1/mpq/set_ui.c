@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpq_set_ui(dest,ulong_num,ulong_den) -- Set DEST to the rational number
    ULONG_NUM/ULONG_DEN.
 

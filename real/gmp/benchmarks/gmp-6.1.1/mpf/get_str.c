@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpf_get_str (digit_ptr, exp, base, n_digits, a) -- Convert the floating
    point number A to a base BASE number and store N_DIGITS raw digits at
    DIGIT_PTR, and the base BASE exponent in the word pointed to by EXP.  For

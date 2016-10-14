@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpf_size(x) -- return the number of limbs currently used by the
    value of the float X.
 

@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpf_fits_ulong_p -- test whether an mpf fits an unsigned long.
 
 Copyright 2001, 2002 Free Software Foundation, Inc.

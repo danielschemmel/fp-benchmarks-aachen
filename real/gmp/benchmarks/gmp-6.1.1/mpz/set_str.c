@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_set_str(mp_dest, string, base) -- Convert the \0-terminated
    string STRING in base BASE to multiple precision integer in
    MP_DEST.  Allow white space in the string.  If BASE == 0 determine

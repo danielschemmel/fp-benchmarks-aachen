@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_cmp_d -- compare absolute values of mpz and double.
 
 Copyright 2001-2003 Free Software Foundation, Inc.

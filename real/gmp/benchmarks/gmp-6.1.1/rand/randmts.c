@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* Mersenne Twister pseudo-random number generator functions.
 
 Copyright 2002, 2003, 2013, 2014 Free Software Foundation, Inc.

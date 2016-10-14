@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpf_out_str (stream, base, n_digits, op) -- Print N_DIGITS digits from
    the float OP to STREAM in base BASE.  Return the number of characters
    written, or 0 if an error occurred.

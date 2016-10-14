@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpf_set -- Assign a float from another float.
 
 Copyright 1993-1995, 2001, 2004 Free Software Foundation, Inc.

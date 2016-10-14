@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpq_set_str -- string to mpq conversion.
 
 Copyright 2001, 2002 Free Software Foundation, Inc.

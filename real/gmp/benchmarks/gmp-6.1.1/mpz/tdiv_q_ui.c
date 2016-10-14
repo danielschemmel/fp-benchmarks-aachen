@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_tdiv_q_ui(quot, dividend, divisor_limb)
    -- Divide DIVIDEND by DIVISOR_LIMB and store the result in QUOT.
 

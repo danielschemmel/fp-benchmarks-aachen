@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpf_ui_div -- Divide an unsigned integer with a float.
 
 Copyright 1993-1996, 2000-2002, 2004, 2005, 2012 Free Software Foundation, Inc.

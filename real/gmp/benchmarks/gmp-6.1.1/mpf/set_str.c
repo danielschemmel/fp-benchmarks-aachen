@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpf_set_str (dest, string, base) -- Convert the string STRING
    in base BASE to a float in dest.  If BASE is zero, the leading characters
    of STRING is used to figure out the base.

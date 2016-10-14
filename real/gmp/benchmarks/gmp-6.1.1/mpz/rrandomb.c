@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_rrandomb -- Generate a positive random mpz_t of specified bit size, with
    long runs of consecutive ones and zeros in the binary representation.
    Meant for testing of other MP routines.

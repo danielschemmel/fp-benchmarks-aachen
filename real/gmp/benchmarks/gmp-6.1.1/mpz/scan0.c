@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_scan0 -- search for a 0 bit.
 
 Copyright 2000-2002, 2004, 2012 Free Software Foundation, Inc.

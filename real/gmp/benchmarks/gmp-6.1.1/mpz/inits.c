@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_inits() -- Initialize multiple mpz_t variables and set them to 0.
 
 Copyright 2009, 2015 Free Software Foundation, Inc.

@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_set_ui(integer, val) -- Assign INTEGER with a small value VAL.
 
 Copyright 1991, 1993-1995, 2001, 2002, 2004, 2012 Free Software Foundation,

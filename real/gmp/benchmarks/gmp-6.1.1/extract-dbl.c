@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* __gmp_extract_double -- convert from double to array of mp_limb_t.
 
 Copyright 1996, 1999-2002, 2006, 2012 Free Software Foundation, Inc.

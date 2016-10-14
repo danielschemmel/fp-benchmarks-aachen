@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_tdiv_ui(dividend, divisor_limb) -- Return DIVDEND mod DIVISOR_LIMB.
 
 Copyright 1991, 1993, 1994, 1996-1998, 2001, 2002, 2004, 2005, 2012 Free

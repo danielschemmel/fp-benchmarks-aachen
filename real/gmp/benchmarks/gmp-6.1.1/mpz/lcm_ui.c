@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_lcm_ui -- least common multiple of mpz and ulong.
 
 Copyright 2001, 2002, 2004 Free Software Foundation, Inc.

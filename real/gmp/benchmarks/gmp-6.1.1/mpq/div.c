@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpq_div -- divide two rational numbers.
 
 Copyright 1991, 1994-1996, 2000, 2001, 2015 Free Software Foundation, Inc.

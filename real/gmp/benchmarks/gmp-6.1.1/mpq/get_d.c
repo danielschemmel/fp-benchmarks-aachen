@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* double mpq_get_d (mpq_t src) -- mpq to double, rounding towards zero.
 
 Copyright 1995, 1996, 2001-2005 Free Software Foundation, Inc.

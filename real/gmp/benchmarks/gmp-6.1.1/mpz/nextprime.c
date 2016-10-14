@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_nextprime(p,t) - compute the next prime > t and store that in p.
 
 Copyright 1999-2001, 2008, 2009, 2012 Free Software Foundation, Inc.

@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* Linear Congruential pseudo-random number generator functions.
 
 Copyright 1999-2003, 2005 Free Software Foundation, Inc.

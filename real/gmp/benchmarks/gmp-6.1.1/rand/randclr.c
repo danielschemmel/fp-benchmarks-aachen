@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* gmp_randclear (state) -- Clear and deallocate random state STATE.
 
 Copyright 1999-2002 Free Software Foundation, Inc.

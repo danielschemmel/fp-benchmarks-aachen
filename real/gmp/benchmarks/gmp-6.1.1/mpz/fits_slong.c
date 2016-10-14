@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* int mpz_fits_slong_p (mpz_t z) -- test whether z fits a long.
 
 Copyright 1997, 2000, 2001 Free Software Foundation, Inc.

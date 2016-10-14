@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
  /* mpq_get_num(num,rat_src) -- Set NUM to the numerator of RAT_SRC.
 
 Copyright 1991, 1994, 1995, 2001, 2012 Free Software Foundation, Inc.

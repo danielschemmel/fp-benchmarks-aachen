@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_mul -- Multiply two integers.
 
 Copyright 1991, 1993, 1994, 1996, 2000, 2001, 2005, 2009, 2011, 2012 Free

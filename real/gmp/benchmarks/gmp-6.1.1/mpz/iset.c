@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_init_set (src_integer) -- Make a new multiple precision number with
    a value copied from SRC_INTEGER.
 

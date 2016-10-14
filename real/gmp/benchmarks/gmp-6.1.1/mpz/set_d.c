@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_set_d(integer, val) -- Assign INTEGER with a double value VAL.
 
 Copyright 1995, 1996, 2000-2003, 2006 Free Software Foundation, Inc.

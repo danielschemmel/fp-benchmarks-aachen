@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_random -- Generate a random mpz_t of specified size in limbs.
 
 Copyright 2001, 2002 Free Software Foundation, Inc.

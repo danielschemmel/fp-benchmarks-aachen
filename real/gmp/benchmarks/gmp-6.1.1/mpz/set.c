@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_set (dest_integer, src_integer) -- Assign DEST_INTEGER from SRC_INTEGER.
 
 Copyright 1991, 1993-1995, 2000, 2012 Free Software Foundation, Inc.

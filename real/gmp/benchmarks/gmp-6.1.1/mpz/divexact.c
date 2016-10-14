@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_divexact -- finds quotient when known that quot * den == num && den != 0.
 
 Contributed to the GNU project by Niels Möller.

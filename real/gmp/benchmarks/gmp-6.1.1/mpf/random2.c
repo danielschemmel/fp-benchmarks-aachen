@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpf_random2 -- Generate a positive random mpf_t of specified size, with
    long runs of consecutive ones and zeros in the binary representation.
    Intended for testing of other MP routines.

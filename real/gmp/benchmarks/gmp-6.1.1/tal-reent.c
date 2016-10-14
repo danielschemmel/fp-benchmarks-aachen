@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* TMP_ALLOC routines using malloc in a reentrant fashion.
 
 Copyright 2000, 2001 Free Software Foundation, Inc.

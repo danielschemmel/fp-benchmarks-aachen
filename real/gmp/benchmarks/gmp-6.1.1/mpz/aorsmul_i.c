@@ -1,5 +1,3 @@
-#define __GMP_WITHIN_GMP 1
-#define HAVE_CONFIG_H 1
 /* mpz_addmul_ui, mpz_submul_ui - add or subtract small multiple.
 
    THE mpz_aorsmul_1 FUNCTION IN THIS FILE IS FOR INTERNAL USE ONLY AND IS

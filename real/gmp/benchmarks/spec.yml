@@ -55,7 +55,7 @@ variants:
               -
                 description: 'first method of abortion'
                 file: 'gmp-6.1.1/invalid.c'
-                line: 84
+                line: 82
       no_integer_division_by_zero:
         correct: false
         counter_examples:
@@ -65,7 +65,7 @@ variants:
               -
                 description: 'second method of abortion'
                 file: 'gmp-6.1.1/errno.c'
-                line: 55
+                line: 53
   klee_integer:
     defines:
       KLEE: null

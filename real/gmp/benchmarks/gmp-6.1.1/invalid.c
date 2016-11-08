@@ -78,6 +78,6 @@ see https://www.gnu.org/licenses/.  */
 void
 __gmp_invalid_operation (void)
 {
-  raise (SIGFPE);
+  // raise (SIGFPE); // DSL: Disabled due to crashing KLEE
   abort ();
 }

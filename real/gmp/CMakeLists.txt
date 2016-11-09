@@ -42,8 +42,8 @@ if (DEFINED CMAKE_CONFIGURATION_TYPES)
 endif()
 
 string(TOUPPER "${CMAKE_BUILD_TYPE}" CMAKE_BUILD_TYPE_UPPER)
-set(GMP_CFLAGS "${CMAKE_C_FLAGS_${CMAKE_BUILD_TYPE_UPPER}}")
-set(GMP_CXXFLAGS "${CMAKE_CXX_FLAGS_${CMAKE_BUILD_TYPE_UPPER}}")
+set(GMP_CFLAGS "${CMAKE_C_FLAGS_${CMAKE_BUILD_TYPE_UPPER}} ${CMAKE_C_FLAGS}")
+set(GMP_CXXFLAGS "${CMAKE_CXX_FLAGS_${CMAKE_BUILD_TYPE_UPPER}} ${CMAKE_CXX_FLAGS}")
 # Generate a script to invoke the configure script so we can pass environment variables.
 set(AUTOGEN_MESSAGE "Automatically generated. DO NOT EDIT!")
 set(configure_script "${CMAKE_CURRENT_SOURCE_DIR}/benchmarks/gmp-6.1.1/configure")

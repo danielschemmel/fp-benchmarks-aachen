@@ -83,7 +83,7 @@ int main(int argc, char** argv) {
 		printf("sizeof(long double): %zu\n", sizeof(long double));
 		puts("");
 
-		double f = 131, g = 331;
+		long double f = 131, g = 331;
 		test(f, g);
 
 		#if defined(USE_KLEE)

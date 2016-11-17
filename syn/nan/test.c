@@ -142,6 +142,7 @@ int main(int argc, char** argv) {
 		klee_make_symbolic(&f, sizeof(f), "f");
 		klee_assume(f < 0);
 		f = sqrtf(f);
+		test(f);
 		#endif
 	}
 #endif

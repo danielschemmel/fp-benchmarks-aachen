@@ -17,7 +17,9 @@ int main(int argc, char** argv) {
 	klee_make_symbolic(&b, sizeof(b), "b");
 	klee_assume(a == a); // we don't want any NaN's, as the code we are testing probably can't deal with them anyway ;)
 	klee_assume(b == b);
-	double arr[] = {10., a, b, .3, .2, 1., 3., a + b, 1., 8.};
+	double c = a + b;
+	klee_assume(c == c);
+	double arr[] = {10., a, b, .3, .2, 1., 3., c, 1., 8.};
 
 	selectionSortDouble(arr, sizeof(arr) / sizeof(arr[0]));
 

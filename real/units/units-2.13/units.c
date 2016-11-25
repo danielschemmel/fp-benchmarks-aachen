@@ -5541,7 +5541,7 @@ main(int argc, char **argv)
 	 argv[2][6] = 'd';
 	 argv[2][7] = '\0';
 	 argv[3] = malloc(3);
-	 klee_make_symbolic(argv[1], 3, "argv[1]");
+	 klee_make_symbolic(argv[3], 3, "argv[3]");
    klee_assume(argv[3][0] >= '0');
    klee_assume(argv[3][0] <= '9');
    klee_assume(argv[3][1] == 'm');

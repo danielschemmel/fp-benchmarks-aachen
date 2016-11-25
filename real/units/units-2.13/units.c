@@ -5531,7 +5531,7 @@ main(int argc, char **argv)
 	 argv[1][0] = '-';
 	 argv[1][1] = 'f';
 	 argv[1][2] = '\0';
-	 argv[2] = malloc(3);
+	 argv[2] = malloc(8);
 	 argv[2][0] = '~';
 	 argv[2][1] = 'u';
 	 argv[2][2] = 'n';

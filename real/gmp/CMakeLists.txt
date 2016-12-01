@@ -34,6 +34,17 @@ set(GMP_AVAILABLE TRUE)
 set(GMP_INSTALL_PREFIX "${CMAKE_CURRENT_BINARY_DIR}/gmp_install")
 set(GMP_BUILD_DIR "${CMAKE_CURRENT_BINARY_DIR}/gmp_build")
 
+set(EXTERNAL_PROJECT_HAS_BYPRODUCTS_ARGS "")
+if ("${CMAKE_GENERATOR}" STREQUAL "Ninja")
+  if ("${CMAKE_VERSION}" VERSION_LESS "3.2")
+    message(FATAL_ERROR "Need CMake >= 3.2 if using Ninja")
+  else()
+    # Need this when building with Ninja otherwise it will complain there is no rule to make these files.
+    set(EXTERNAL_PROJECT_HAS_BYPRODUCTS_ARGS BUILD_BYPRODUCTS "${GMP_INSTALL_PREFIX}/lib/libgmp.a")
+  endif()
+else()
+endif()
+
 if (DEFINED CMAKE_CONFIGURATION_TYPES)
   # FIXME: We can't set BINARY_DIR to use $<CONFIG> (it doesn't get expanded)
   # so we won't get separate builds for different build types. It's not worth

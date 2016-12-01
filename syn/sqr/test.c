@@ -39,7 +39,7 @@ int main(int argc, char** argv) {
 		klee_assume(f == f);
 		double a = fabs(f);
 		double b = sqrt(f*f);
-#if defined(ENABLE_INFINITY)
+#if defined(ENABLE_FLOW)
 		assert(b == INFINITY || (a * 0.99 <= b && a >= b * 0.99) && "this should pass...");
 #else
 		assert(a * 0.99 <= b && a >= b * 0.99 && "this should have an error path...");
@@ -59,7 +59,7 @@ int main(int argc, char** argv) {
 		klee_assume(f == f);
 		long double a = fabsl(f);
 		long double b = sqrtl(f*f);
-#if defined(ENABLE_INFINITY)
+#if defined(ENABLE_FLOW)
 		assert(b == INFINITY || (a * 0.99 <= b && a >= b * 0.99) && "this should pass...");
 #else
 		assert(a * 0.99 <= b && a >= b * 0.99 && "this should have an error path...");

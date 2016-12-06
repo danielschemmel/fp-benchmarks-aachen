@@ -13,7 +13,6 @@ variants:
   default:
     defines: {}
     dependencies:
-      klee_runtime: {}
       cmath: {}
     description: >
       A long double test with unnormal numbers

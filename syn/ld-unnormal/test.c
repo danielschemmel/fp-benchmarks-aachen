@@ -57,6 +57,9 @@ int main(int argc, char **argv) {
   // TODO: Report to GCC devs
   // assert(fpclassify(l) == FP_NORMAL);
 
+  // Note these assertions should all be true but some are mis-compiled by
+  // Clang 3.9 at -O2 and constant folded to be false.
+  // Reported to Clang devs: https://llvm.org/bugs/show_bug.cgi?id=31294
   assert(l != l);
   assert(!(l == l));
   assert(!(l < l));

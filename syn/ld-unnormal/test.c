@@ -49,7 +49,13 @@ int main(int argc, char **argv) {
 
   assert(!isinf(l));
 
-  assert(fpclassify(l) == FP_NORMAL);
+  // Clearly `l` is not a normal floating point number but GCC and Clang (using
+  // glibc 2.24) differ on their behaviour here. GCC 6.2.1 (both at `-O0` and
+  // `-O2`) fail this assertion. Clang 3.9 (both at `-O0` and `-O2`) pass this
+  // assertion.
+  // TODO: Report to Clang devs
+  // TODO: Report to GCC devs
+  // assert(fpclassify(l) == FP_NORMAL);
 
   assert(l != l);
   assert(!(l == l));

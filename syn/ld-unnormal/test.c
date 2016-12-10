@@ -90,6 +90,24 @@ int main(int argc, char **argv) {
   assert(isnan((float)l));
   assert(isnan((double)l));
 
+  // Unnormal numbers are not part of C11's model of floating point so I think
+  // the behaviour below is undefined.
+  //
+  // Here is the relevant section from the C11 Committee Draft
+  // ```
+  // F4. Floating to integer conversion
+  //
+  // If the integer type is _Bool, 6.3.1.2 applies and no floating-point
+  // exceptions are raised (even for NaN). Otherwise, if the floating value is
+  // infinite or NaN or if the integral part of the floating value exceeds
+  // the range of the integer type, then the "invalid" floating-point exception
+  // is raised and the resulting value is unspecified. Otherwise, the resulting
+  // value is determined by 6.3.1.4. Conversion of an integral floating value
+  // that does not exceed the range of the integer type raises no
+  // floating-point exceptions; whether conversion of a non-integral floating
+  // value raises the "inexact" floating-point exception is
+  // unspecified.
+  // ```
   assert((uint8_t)l == 0);
   assert((int8_t)l == 0);
   assert((uint16_t)l == 0);

@@ -74,7 +74,15 @@ int main(int argc, char **argv) {
   assert(isnan(l / d));
   assert(isnan(l * d));
 
-  assert(!isnan(fabsl(l)));
+  // Performing an `fabsl(l)` should give a NaN but GCC and Clang
+  // (using glibc 2.24) differ on their behaviour here. GCC 6.2.1
+  // (both at `-O0` and `-O2`) fail this assertion (`isnan(fabsl(l))` is true).
+  // Clang 3.9 (both at `-O0` and `-O2`) pass this assertion
+  // (`isnan(fabs(l))` is false).
+  // TODO: Report to Clang devs
+  // TODO: Report to GCC devs
+  // assert(!isnan(fabsl(l)));
+
   assert(isnan(fabsl(l) + d));
   assert(isnan(sqrtl(l)));
   assert(isnan(nearbyintl(l)));

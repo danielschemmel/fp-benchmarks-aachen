@@ -1,0 +1,25 @@
+architectures:
+  - x86_64
+categories:
+  - real_world
+  - issta_2017
+  - aachen
+dependencies:
+  cmath: {}
+language: gnu99
+name: wxpro
+schema_version: 0
+sources:
+  - main.c
+  - wxpro/units.c
+variants:
+  meter_ft:
+    dependencies:
+      klee_runtime: {}
+    description: >
+      Convert from a symbolic number of meters to feet
+    verification_tasks:
+      no_assert_fail:
+        correct: true
+description: >
+  A tool to convert between units

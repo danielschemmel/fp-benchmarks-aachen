@@ -4,6 +4,7 @@ add_benchmark(numerical_recipes)
 add_benchmark(libmatheval)
 add_benchmark(diction)
 add_benchmark(units)
+add_benchmark(wxpro)
 
 # HACK: Disable optimizing this benchmark when using old Clang because Clang 3.4.2
 # hangs when trying to optimize this benchmark.

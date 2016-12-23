@@ -42,7 +42,9 @@
 #include <signal.h>
 #include <stdarg.h>
 #include <time.h>
+#if defined(KLEE)
 #include <klee/klee.h>
+#endif
 
 #ifndef NO_SETLOCALE
 #  include<locale.h>
@@ -5518,39 +5520,28 @@ write_files_sig(int sig)
 int
 main(int argc, char **argv)
 {
-   argc = 5;
-	 argv = malloc(6*sizeof(char*));
-	 argv[0] = malloc(6);
-	 argv[0][0] = 'u';
-	 argv[0][1] = 'n';
-	 argv[0][2] = 'i';
-	 argv[0][3] = 't';
-	 argv[0][4] = 's';
-	 argv[0][5] = '\0';
-	 argv[1] = malloc(3);
-	 argv[1][0] = '-';
-	 argv[1][1] = 'f';
-	 argv[1][2] = '\0';
-	 argv[2] = malloc(8);
-	 argv[2][0] = '~';
-	 argv[2][1] = 'u';
-	 argv[2][2] = 'n';
-	 argv[2][3] = 'i';
-	 argv[2][4] = 't';
-	 argv[2][5] = '.';
-	 argv[2][6] = 'd';
-	 argv[2][7] = '\0';
-	 argv[3] = malloc(3);
-	 klee_make_symbolic(argv[3], 3, "argv[3]");
-   klee_assume(argv[3][0] >= '0');
-   klee_assume(argv[3][0] <= '9');
-   klee_assume(argv[3][1] == 'm');
-	 argv[3][2] = '\0';
-	 argv[4] = malloc(3);
-	 argv[4][0] = 'f';
-	 argv[4][1] = 't';
-	 argv[4][2] = '\0';
-	 argv[5] = 0;
+#if defined(KLEE)
+  argc = 3;
+  argv = malloc(4 * sizeof(char *));
+  argv[0] = malloc(6);
+  argv[0][0] = 'u';
+  argv[0][1] = 'n';
+  argv[0][2] = 'i';
+  argv[0][3] = 't';
+  argv[0][4] = 's';
+  argv[0][5] = '\0';
+  argv[1] = malloc(3);
+  klee_make_symbolic(argv[1], 3, "argv[1]");
+  klee_assume(argv[1][0] >= '0');
+  klee_assume(argv[1][0] <= '9');
+  klee_assume(argv[1][1] == 'm');
+  argv[1][2] = '\0';
+  argv[2] = malloc(3);
+  argv[2][0] = 'f';
+  argv[2][1] = 't';
+  argv[2][2] = '\0';
+  argv[3] = 0;
+#endif
 
    static struct unittype have, want;
    char *havestr=0, *wantstr=0;
@@ -5635,8 +5626,11 @@ main(int argc, char **argv)
    }
 #endif
 
+#ifndef KLEE
+   // KLEE doesn't support this
    signal(SIGINT, write_files_sig);
    signal(SIGTERM, write_files_sig);
+#endif
 
    if (logfilename) {
      if (!interactive)

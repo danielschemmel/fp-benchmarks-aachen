@@ -2,7 +2,6 @@ architectures:
   - x86_64
 categories:
   - real_world
-  - issta_2017
   - aachen
 dependencies:
   cmath: {}
@@ -30,19 +29,28 @@ defines:
   HAVE_INTTYPES_H: '1'
   HAVE_STDINT_H: '1'
   HAVE_UNISTD_H: '1'
+description: >
+  Convert from a symbolic number of meters to feet
 sources:
   - units-2.13/units.c
   - units-2.13/parse.tab.c
   - units-2.13/getopt.c
   - units-2.13/getopt1.c
+runtime_environment:
+  command_line_arguments: []
+  environment_variables:
+    'UNITSFILE': '@spec_dir@units-2.13/definitions.units'
 variants:
   meter_ft:
+    categories:
+      - issta_2017
+    defines:
+      KLEE: null
     dependencies:
       klee_runtime: {}
-    description: >
-      Convert from a symbolic number of meters to feet
-    verification_tasks:
-      no_assert_fail:
-        correct: true
-description: >
-  A tool to convert between units
+  # For testing
+  meter_ft_non_klee:
+    description: "Just for testing"
+verification_tasks:
+  no_assert_fail:
+    correct: true

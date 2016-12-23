@@ -5626,11 +5626,11 @@ main(int argc, char **argv)
    }
 #endif
 
-#ifndef KLEE
-   // KLEE doesn't support this
-   signal(SIGINT, write_files_sig);
-   signal(SIGTERM, write_files_sig);
-#endif
+// DL: Disable for now. KLEE doesn't support this
+// and we would like to run both non_klee and symbolic
+// version through KLEE.
+//   signal(SIGINT, write_files_sig);
+//   signal(SIGTERM, write_files_sig);
 
    if (logfilename) {
      if (!interactive)

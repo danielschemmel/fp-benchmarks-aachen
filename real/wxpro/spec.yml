@@ -11,13 +11,25 @@ name: wxpro
 schema_version: 0
 sources:
   - main.c
-  - wxpro/units.c
+  - units.c
 variants:
   meter_ft:
+    defines:
+      M2FT: null
     dependencies:
       klee_runtime: {}
     description: >
       Convert from a symbolic number of meters to feet
+    verification_tasks:
+      no_assert_fail:
+        correct: true
+  tostr:
+    defines:
+      TOSTR: null
+    dependencies:
+      klee_runtime: {}
+    description: >
+      convert a symbolic double to a lat/lon string
     verification_tasks:
       no_assert_fail:
         correct: true

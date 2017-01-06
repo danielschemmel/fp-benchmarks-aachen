@@ -1,19 +1,25 @@
 #include <assert.h>
 #include <stdlib.h>
 #include <klee/klee.h>
-#include "wxpro/units.h"
+#include "units.h"
 
 int main(int argc, char** argv) {
-  double m;
-  klee_make_symbolic(&m, sizeof(m), "meters");
-  klee_assume(m >= 0);
-  klee_assume(m <= 1000);
+  double f;
+  klee_make_symbolic(&f, sizeof(f), "meters");
+  klee_assume(f >= 0);
+  klee_assume(f <= 1000);
 
-  double ft = m2ft(m);
-  assert(ft >= 0 && ft <= m * 3.3); // this is a rough approximation
+#ifdef M2FT
+  double ft = m2ft(f);
+  assert(ft >= 0 && ft <= f * 3.3); // this is a rough approximation
+#endif
 
-  char* lat = DecimalLatitudeToLORAN(0.9);
+#ifdef TOSTR
+  char* lat = DecimalLatitudeToLORAN(f);
+	assert(lat && "this really should not fail");
   free(lat);
-  char* lon = DecimalLongitudeToLORAN(0.9);
+  char* lon = DecimalLongitudeToLORAN(f);
+	assert(lon && "this really should not fail");
   free(lon);
+#endif
 }

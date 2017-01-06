@@ -2,7 +2,6 @@ architectures:
   - x86_64
 categories:
   - real_world
-  - issta_2017
   - aachen
 dependencies:
   cmath: {}

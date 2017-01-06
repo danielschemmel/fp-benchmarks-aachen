@@ -108,9 +108,9 @@ int main(int argc, char **argv) {
   // value raises the "inexact" floating-point exception is
   // unspecified.
   // ```
-  assert((uint8_t)l == 0);
-  assert((int8_t)l == 0);
-  assert((uint16_t)l == 0);
+  //assert((uint8_t)l == 0);
+  //assert((int8_t)l == 0);
+  //assert((uint16_t)l == 0);
 
   // GCC and Clangs behaviour differ here. GCC 6.2.1 (both at `-O0` and `-O2`)
   // fail this assertion with the casted value being `-32768`. Clang passes
@@ -119,8 +119,8 @@ int main(int argc, char **argv) {
   // TODO: Report to GCC devs
   // assert((int16_t)l == 0);
 
-  assert((uint32_t)l == 0);
-  assert((int32_t)l == -2147483648);
+  //assert((uint32_t)l == 0);
+  //assert((int32_t)l == -2147483648);
 
   // GCC and Clangs behaviour differ here. GCC 6.2.1 (both at `-O0` and `-O2`)
   // fail this assertion with the casted value being `0x8000000000000000`.
@@ -129,5 +129,5 @@ int main(int argc, char **argv) {
   // TODO: Report to GCC devs
   // assert((uint64_t)l == 0);
 
-  assert((int64_t)l == INT64_MIN);
+  //assert((int64_t)l == INT64_MIN);
 }

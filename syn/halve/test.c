@@ -79,4 +79,6 @@ int main(int argc, char** argv) {
 		assert(f == g && "this should have an error path when underflow occurs");
 	}
 #endif
+
+	return 0;
 }

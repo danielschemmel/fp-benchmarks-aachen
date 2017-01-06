@@ -42,8 +42,6 @@ runtime_environment:
     'UNITSFILE': '@spec_dir@units-2.13/definitions.units'
 variants:
   meter_ft:
-    categories:
-      - issta_2017
     defines:
       KLEE: null
     dependencies:

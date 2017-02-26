@@ -55,6 +55,10 @@ variants:
                 description: 'Failable assertion'
                 file: 'test.c'
                 line: 27
+              -
+                description: 'Can fail with -0x1.8100f8p-75 input'
+                file: 'test.c'
+                line: 23
   double-noflow:
     defines:
       USE_KLEE: null

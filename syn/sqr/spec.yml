@@ -98,6 +98,10 @@ variants:
             description: 'numeric instability'
             locations:
               -
+                description: 'Can fail with 0x0.1800108024001p-1022 as input'
+                file: 'test.c'
+                line: 43
+              -
                 description: 'Failable assertion'
                 file: 'test.c'
                 line: 47
@@ -139,6 +143,10 @@ variants:
           -
             description: 'numeric instability'
             locations:
+              -
+                description: 'Can fail with 0xe.62a2a3b212a279ap-10091L as input'
+                file: 'test.c'
+                line: 63
               -
                 description: 'Failable assertion'
                 file: 'test.c'

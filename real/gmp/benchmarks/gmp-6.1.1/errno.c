@@ -50,7 +50,7 @@ void
 __gmp_exception (int error_bit)
 {
   gmp_errno |= error_bit;
-  __gmp_junk = 10 / __gmp_0;
+  // __gmp_junk = 10 / __gmp_0; // DL: Disable due to UB which might get removed by Clang.
   abort ();
 }
 

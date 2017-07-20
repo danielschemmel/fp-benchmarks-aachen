@@ -2,7 +2,7 @@ architectures:
   - x86_64
 categories:
   - real_world
-  - issta_2017
+  - ase_2017
   - aachen
 dependencies:
   gmp: { 'version': '6.1.1'}

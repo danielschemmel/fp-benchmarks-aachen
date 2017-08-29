@@ -43,7 +43,7 @@ runtime_environment:
 variants:
   meter_ft:
     categories:
-      - issta_2017
+      - ase_2017
     defines:
       KLEE: null
     dependencies:

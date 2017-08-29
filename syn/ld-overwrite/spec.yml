@@ -2,7 +2,7 @@ architectures:
   - x86_64
 categories:
   - synthetic
-  - issta_2017
+  - ase_2017
   - aachen
 language: c11
 name: ld-overwrite

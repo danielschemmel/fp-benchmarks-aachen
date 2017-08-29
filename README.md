@@ -16,4 +16,4 @@ Several category name conventions are used
 
 Drop this directory into the `benchmarks` folder in
 [fp-bench](https://github.com/delcypher/fp-bench)
-with the name `imperial`.
+with the name `aachen`.
